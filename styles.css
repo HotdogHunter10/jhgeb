@@ -1,0 +1,183 @@
+/* CSS DOCUMENT FOR A RESPONSIVE PAGE by Hunter Hothan 20228*/
+body{
+	Background-color: #230C33;
+}
+
+.pagebox{
+	Background-color: #592E83;
+	margin: auto;
+	width: 70%;
+}
+.banner{
+	width: 100%
+}
+.old{
+	float: left;
+	text-align: left;
+}
+
+.new{
+	float: right;
+	text-align: right;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #592E83;
+}
+
+li{
+	font-family: helvetica, sans-serif;
+	color: #purple;
+	
+}
+li a{
+	display: inline-block;
+	color: #B27C66;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li current{
+	background-color: #B3B7EE;
+	color: purple;
+}
+
+li:hover{
+	background-color: #9984D4;
+	color: purple;
+}
+
+h1{
+	font-family: helvetica, sans-serif;
+	color: #CECFC7;
+}
+
+h2{
+	font-family: helvetica, sans-serif;
+	color: #CECFC7;
+}
+
+.pic1{
+	width: 33%;
+	float: left;
+	padding: 5px;
+}
+
+.pic2{
+	width: 33%;
+	float: left;
+	padding: 5px;
+}
+
+hr{
+	clear: both;
+}
+p{
+	color: #CECFC7;
+	font-size: 25px;
+}
+hr{
+	color: #CECFC7;
+}
+h3{
+	color: #CECFC7;
+	font-family: helvetica, sans-serif;
+}
+
+.fling-minislide{
+	width: 50%;
+	margin: auto;
+	height: 0px;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 50%;
+}	
+
+.fling-minislide img{
+	position: absolute;
+	animation: fling-minislide 75s infinite;
+	opacity: 0;
+	width: 100%;
+	height: auto;
+}
+
+@keyframes fling-minislide{25%{opacity:1;}100%{opacity:0;}}
+.fling-minislide img:nth-child(1){animation-delay:0s;}
+.fling-minislide img:nth-child(2){animation-delay:15s;}
+.fling-minislide img:nth-child(3){animation-delay:30s;}
+.fling-minislide img:nth-child(4){animation-delay:45s;}
+.fling-minislide img:nth-child(5){animation-delay:60s;}
+
+.video{
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+iframe, ._video object{
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 767px){
+	.pagebox{width: 90%;}
+}
+
+@media only screen and (max-width: 550px){
+	.pagebox{width: 98%;}
+	nav{
+		width: 100%;
+		overflow: hidden;
+		padding: 0px;
+	}
+	a{width: 100%;
+	display: block;
+	text-align: center;
+	background-color: 000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #33032F;}
+	
+	li{width: 100%}
+	li a{padding-left: 0px;}
+	.smallpic{
+		width: 100%;
+		padding: 0px;
+	}
+	
+	.slideshow{display: none;}
+}
+@media only screen and (max-width: 1790px){
+	p{
+		font-size: 21px;
+	}
+
+}
+@media only screen and (max-width: 1084px){
+	p{
+		font-size: 19px;
+	}
+
+}
+@media only screen and (max-width: 767px){
+	p{
+		font-size: 17px;
+	}
+
+}
+@media only screen and (max-width: 550px){
+	p{
+		font-size: 15px;
+	}
+
+}
